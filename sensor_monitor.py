@@ -240,16 +240,14 @@ class Monitor3:
         if answer == None:
             return
         else:
-            # answer = 0.3168 * answer - 255.02
-            return answer
+            return answer / 10.0
 
     def readTemp2(self):
         answer = self.modbus.registerRead(self.sensors_id.temp2_id, signed = False)
         if answer == None:
             return
         else:
-            answer = 0.3168 * answer - 255.02
-            return answer
+            return answer / 10.0
 
 class PowerMeterMonitor:
     def __init__(self, port_name, baudrate, box_id, sensors_id):

@@ -7,7 +7,7 @@ import sys
 import csv
 
 #Sensor Info
-PATH = "/Users/BarryHao/Desktop/"
+PATH = "/Users/BarryHao/Desktop/monitor_system/"
 PORT_NAME = '/dev/cu.usbserial-DN03VH5T'
 BAUDRATE = 19200
 
